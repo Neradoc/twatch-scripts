@@ -19,7 +19,7 @@ axp202 = AXP202(board.I2C())
 axp202.set_ldo2(True)
 irq_axp = DigitalInOut(board.AXP202_INT)
 
-buz = DigitalInOut(board.MOTOR)
+buz = DigitalInOut(board.VIBRATE)
 buz.switch_to_output(False)
 
 # irq_touch = DigitalInOut(board.TOUCH_INT)
